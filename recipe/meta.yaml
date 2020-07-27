@@ -19,9 +19,9 @@ build:
 
 requirements:
   host:
-    - ruby
+    - ruby >=2.5
   run:
-    - ruby
+    - ruby >=2.5
 
 test:
   commands:
