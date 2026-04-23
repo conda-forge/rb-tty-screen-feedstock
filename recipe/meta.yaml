@@ -1,5 +1,5 @@
 {% set name = "tty-screen" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 6508657c38f32bdca64880abe201ce237d80c94146e1f9b911cba3c7823659a2
+  sha256: c090652115beae764336c28802d633f204fb84da93c6a968aa5d8e319e819b50
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   script:
     - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
